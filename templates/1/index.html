@@ -4,8 +4,62 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
 
 <style>
+
+.bi-chevron-double-down {
+font-size:60px;
+-moz-animation: maze 2s infinite linear;
+-o-animation: maze 2s infinite linear;
+-webkit-animation: maze 2s infinite linear;
+animation: maze 2s infinite linear;
+}
+
+@keyframes maze {
+
+0% {
+padding-top:0;
+opacity:1;
+}
+
+50% {
+padding-top:40px;
+opacity:1;
+}
+
+100% {
+padding-top:0px;
+opacity:1;
+}
+}
+
+.strongly {
+font-family: 'Dancing Script', cursive;
+font-size:55px;
+animation:fadeInUpBig;
+animation-delay:3.9s;
+animation-duration:1.3s;
+}
+
+.strongly1 {
+font-family: 'Dancing Script', cursive;
+font-size:25px;
+animation:fadeInUpBig;
+animation-delay:3.9s;
+animation-duration:1.3s;
+}
+
+.cardpost1 {
+animation:fadeInDown;
+animation-delay:3.9s;
+animation-duration:6s;
+}
+
+.cardpost2 {
+animation:fadeInDown;
+animation-delay:3.9s;
+animation-duration:6s;
+}
+
 .placeholder {
-opacity:0;
 max-width:100%;
 overflow:hidden;
 }
