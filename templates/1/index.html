@@ -58,6 +58,7 @@ opacity:1;
 }
 
 .strongly {
+z-index:1;
 font-family: 'Noto Sans', sans-serif;
 font-size:55px;
 animation:fadeInUpBig;
@@ -66,6 +67,7 @@ animation-duration:1.3s;
 }
 
 .strongly1 {
+z-index:1;
 font-family: 'Noto Sans', sans-serif;
 font-size:25px;
 animation:fadeInUpBig;
@@ -99,16 +101,16 @@ mask-size:200% 100%;
 animation:placeholder-wave 1s linear infinite;
 }
 
-#carouselExampleSlidesOnly{
+#carouselExampleSlidesOnly {
 position:absolute;
-z-index:-99999999999;
+z-index:-9999999;
 overflow:hidden;
 display:block;
-width:100vw;
-height:100vh;
+min-width:100vw;
+min-height:100vh;
 }
 
-.filterslide{
+.filterslide {
 filter:brightness(30%);
 }
 
