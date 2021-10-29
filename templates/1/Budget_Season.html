@@ -12,14 +12,24 @@
 <style>
 
 .filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none;
+float: left;
+background-color: #2196F3;
+color: #ffffff;
+width: 100px;
+line-height: 100px;
+text-align: center;
+margin: 2px;
+display: none;
+}
+
+.show {
+display: block;
+}
+
+.container {
+margin-top: 20px;
+overflow: hidden;
+}
 
 .card {
 width:auto;
@@ -62,7 +72,7 @@ width:69.9999%;
   <button class="btn" onclick="filterSelection('Jackets')"> Jackets </button>
 </div>
 
-<div class="col-md-9">
+<div class="container">
 <div class="row">
 
 <div class="col-12 col-md-4 py-3 filterDiv Shirts">
@@ -176,7 +186,7 @@ width:69.9999%;
 </div>
 
 
-<div class="col-12 col-md-4 py-3 Trousers">
+<div class="col-12 col-md-4 py-3 filterDiv Trousers">
 <div class="card">
   <img src="./css/media/store/woman-g1b583aa98_1280.jpg" class="card-img-top" alt="Some quick example text to build on the card title and make up the bulk of the card's content.">
   <div class="card-body">
@@ -194,7 +204,7 @@ width:69.9999%;
 </div>
 </div>
 
-<div class="col-12 col-md-4 py-3 Trousers">
+<div class="col-12 col-md-4 py-3 filterDiv Trousers">
 <div class="card">
   <img src="./css/media/store/images.jpeg" class="card-img-top" alt="Some quick example text to build on the card title and make up the bulk of the card's content.">
   <div class="card-body">
