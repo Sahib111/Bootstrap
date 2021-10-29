@@ -2,9 +2,7 @@
 
 <style>
 
-html {
-scroll-behavior: smooth;
-}
+
 
 .preloader {
 margin:0 0 0 0;
@@ -26,48 +24,9 @@ background-repeat: no-repeat;
 background-position:center;
 } 
 
-.cardpost1 {
-animation:fadeInDown;
-animation-delay:3.9s;
-animation-duration:6s;
-}
 
-.bi-chevron-double-down {
-z-index:9999999;
-font-size:60px;
--moz-animation: maze 2s infinite linear;
--o-animation: maze 2s infinite linear;
--webkit-animation: maze 2s infinite linear;
-animation: maze 2s infinite linear;
-}
 
-@keyframes maze {
 
-0% {
-padding-top:0px;
-opacity:1;
-}
-
-50% {
-padding-top:40px;
-opacity:1;
-}
-
-100% {
-padding-top:0px;
-opacity:1;
-}
-}
-
-.strongly {
-z-index:1;
-color:#fff;
-font-family: 'Noto Sans', sans-serif;
-font-size:55px;
-animation:fadeInUpBig;
-animation-delay:3.9s;
-animation-duration:1.3s;
-}
 
 .strongly1 {
 z-index:1;
@@ -78,6 +37,25 @@ animation:fadeInUpBig;
 animation-delay:3.9s;
 animation-duration:1.3s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.placeholder {
+opacity:0;
+}
+
 
 .placeholder {
 max-width:100%;
@@ -91,82 +69,6 @@ mask-image:linear-gradient(130deg,#000 55%,rgba(0,0,0,0) 75%,#000 95%);
 mask-size:200% 100%;
 -webkit-animation:placeholder-wave 1s linear infinite;
 animation:placeholder-wave 1s linear infinite;
-}
-
-#carouselExampleSlidesOnly {
-display:block;
-width:100vw;
-height:100vh;
-position:absolute;
-z-index:-9999999;
-overflow:hidden;
-filter:brightness(30%);
-}
-
-.carousel-item img{
-width:100%;
-height:100%;
-min-width:200vw;
-min-height:100vh;
-overflow:hidden;
-}
-
-.card {
-width:auto;
-border-radius:20px;
-border:1px #000 solid;
-}
-
-paddingtop30 {
-padding-top:30%;
-}
-
-paddingtop50 {
-padding-top:50%;
-}
-
-
-@media (min-width:768px){
-.col-md-9 {
-width:69.9999%;
-}
-}
-
-.footfont {
-font-size:1.2trem;
-}
-
-#container {
-text-align: center;
-}
-
-#text {
-display: inline-block;
-vertical-align: middle;
-color: white;
-letter-spacing: 2px;
-}
-
-#cursor {
-display: inline-block;
-vertical-align: middle;
-width: 3px;
-height: 50px;
-background-color: white;
-animation: blink .75s step-end infinite;
-}
-
-@keyframes blink {
-from, to { 
-background-color: transparent 
-}
-50% { 
-background-color: white; 
-}
-}
-
-.placeholder {
-opacity:0;
 }
 
 </style>
