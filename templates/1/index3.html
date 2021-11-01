@@ -63,7 +63,8 @@ padding-top:50%;
 }
 
 .strongly {
-z-index:1;
+display:inline-block;
+z-index:100;
 color:#fff;
 font-family: 'Noto Sans', sans-serif;
 font-size:55px;
@@ -73,8 +74,6 @@ animation-duration:1.3s;
 }
 
 #carouselExampleSlidesOnly {
-display:block;
-position:absolute;
 filter:brightness(30%);
 }
 
@@ -105,7 +104,7 @@ width:69.9999%;
 <body>
 
 
-<div class="postloader2">
+<div class="postloader2 text-center">
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width:100vw;height:100vh;z-index:-9999999;">
 <div class="carousel-inner">
 <div class="carousel-item active">
@@ -129,7 +128,6 @@ width:69.9999%;
 <h1 class="text-dark paddingtop50 d-none d-md-block">
 <strong class="strongly">Hi! <br/> Welcome to Fashion Season</strong>
 </h1>
-</div>
 
 <div id="container">
 <div id="text">
@@ -138,8 +136,10 @@ width:69.9999%;
 </div>
 <script src="./js/Typed.js"></script>
 </div>
+</div>
 
 <br/>
+
 <div class="container-fluid">
 <div class="row">
 <div class="col-9 text-white text-start fw-bolder">
