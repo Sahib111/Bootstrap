@@ -17,7 +17,6 @@ scroll-behavior: smooth;
 }
 
 .postloader2 {
-z-index:10;
 width:100vw;
 height:100vh;
 background-size: cover;
@@ -56,12 +55,10 @@ background-color: white;
 
 .paddingtop30 {
 padding-top:30%;
-z-index:1000;
 }
 
 .paddingtop50 {
 padding-top:50%;
-z-index:1000;
 }
 
 .strongly {
@@ -100,6 +97,10 @@ width:69.9999%;
 }
 }
 
+zindexplus {
+z-index:10000;
+}
+
 </style>
 
 </head>
@@ -124,14 +125,15 @@ width:69.9999%;
 </div>
 </div>
 
-<h1 class="text-dark paddingtop30 d-block d-md-none">
+
+<h1 class="zindexplus text-dark paddingtop30 d-block d-md-none">
 <strong class="strongly">Hi! <br/> Welcome to Fashion Season</strong>
 </h1>
-<h1 class="text-dark paddingtop50 d-none d-md-block">
+<h1 class="zindexplus text-dark paddingtop50 d-none d-md-block">
 <strong class="strongly">Hi! <br/> Welcome to Fashion Season</strong>
 </h1>
 
-<div id="container">
+<div id="container zindexplus">
 <div id="text">
 </div>
 <div id="cursor">
