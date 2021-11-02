@@ -30,6 +30,42 @@ overflow:hidden;
 filter:brightness(30%);
 }
 
+#container {
+text-align: center;
+}
+
+#text {
+display: inline-block;
+vertical-align: middle;
+color: white;
+letter-spacing: 2px;
+}
+
+#cursor {
+display: inline-block;
+vertical-align: middle;
+width: 3px;
+height: 50px;
+background-color: white;
+animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+from, to { 
+background-color: transparent 
+}
+50% { 
+background-color: white; 
+}
+}
+
+.strongly1 {
+z-index:1;
+color:#fff;
+font-family: 'Noto Sans', sans-serif;
+font-size:25px;
+}
+
 </style>
 </head>
 <body>
@@ -50,15 +86,22 @@ filter:brightness(30%);
       <img src="./css/media/summerfield-g4243d5336_1280.jpg" class="d-block w-100">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
+</div>
+
+<h1 class="paddingtop30 text-white text-center d-block d-md-none">
+<strong class="strongly">Hi! <br/> Welcome to Fashion Season</strong>
+</h1>
+<h1 class="paddingtop50 text-white text-center d-none d-md-block">
+<strong class="strongly">Hi! <br/> Welcome to Fashion Season</strong>
+</h1>
+
+<div id="container">
+<div id="text">
+</div>
+<div id="cursor">
+</div>
+<script src="./js/Typed.js"></script>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
