@@ -11,73 +11,44 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"/>
 <style>
 
-.carouselbg {
-filter:brightness(30%);
+.carouselstart {
+z-index: 9999999;
+width:100vw;
+height:100vh;
+background-size:cover;
+background-repeat: no-repeat;
+background-position:center;
 }
 
-#contain {
-text-align: center;
+.carouselfades {
+display:block;
+width:100vw;
+height:100vh;
 position:absolute;
-}
-
-#text {
-vertical-align: middle;
-color: white;
-letter-spacing: 2px;
-}
-
-#cursor {
-vertical-align: middle;
-width: 3px;
-height: 50px;
-background-color: white;
-animation: blink .75s step-end infinite;
-}
-
-@keyframes blink {
-from, to { 
-background-color: transparent 
-}
-50% { 
-background-color: white; 
-}
-}
-
-.strongly {
-color:#fff;
-font-family: 'Noto Sans', sans-serif;
-font-size:52px;
-font-weight:800;
-}
-
-.paddingtop30 {
-padding-top:30%;
-}
-
-.paddingtop50 {
-padding-top:50%;
+z-index:-9999999;
+overflow:hidden;
+filter:brightness(30%);
 }
 
 </style>
 </head>
 <body>
 
-<div class="container-fluid carouselbg" style="z-index:-99999";>
-<div class="row">
-<div class="col-12">
-
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="carouselstart">
+<div id="carouselExampleFade" class="carousel slide carousel-fade carouselfades" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./css/media/fashion-g99b748f15_1280.jpg" class="d-block w-100" style="min-width:200vw;min-height:100vh;border-radius:0px;">
+      <img src="./css/media/woman-g1b583aa98_1280.jpg" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="./css/media/woman-g9cc5e633c_1280.jpg" class="d-block w-100" style="min-width:200vw;min-height:100vh;border-radius:0px;">
+      <img src="./css/media/fashion-g99b748f15_1280.jpg" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="./css/media/summerfield-g4243d5336_1280.jpg" class="d-block w-100" style="min-width:200vw;min-height:100vh;border-radius:0px;">
+      <img src="./css/media/woman-g9cc5e633c_1280.jpg" class="d-block w-100">
     </div>
-
+    <div class="carousel-item">
+      <img src="./css/media/summerfield-g4243d5336_1280.jpg" class="d-block w-100">
+    </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -87,23 +58,6 @@ padding-top:50%;
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-
-</div>
-<div id="contain position-fixed" style="z-index:99999!important;">
-<h1 class="strongly paddingtop30 text-dark text-center d-block d-md-none">
-Hi! <br/> Welcome to Fashion Season
-</h1>
-<h1 class="strongly paddingtop50 text-dark text-center d-none d-md-block">
-Hi! <br/> Welcome to Fashion Season
-</h1>
-<div id="text">
-</div>
-<div id="cursor">
-</div>
-<script src="./js/Typed.js"></script>
-</div>
-
-</div>
 </div>
 </div>
 
