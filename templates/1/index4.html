@@ -11,7 +11,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"/>
 <style>
 
-.startpage, carousel-item img{
+.startpage{
+z-index:-1;
+width:100vw;
+height:100vh;
+}
+
+.imgfull {
+min-width:100vw;
+min-height:100vh;
+}
+
+.headingcarousel {
+z-index:1;
 width:100vw;
 height:100vh;
 }
@@ -24,20 +36,22 @@ height:100vh;
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./css/media/woman-g1b583aa98_1280.jpg" class="w-100">
+      <img src="./css/media/woman-g1b583aa98_1280.jpg" class="w-100 imgfull">
     </div>
     <div class="carousel-item">
-      <img src="./css/media/fashion-g99b748f15_1280.jpg" class="w-100">
+      <img src="./css/media/fashion-g99b748f15_1280.jpg" class="w-100 imgfull">
     </div>
     <div class="carousel-item">
-      <img src="./css/media/woman-g9cc5e633c_1280.jpg" class="w-100">
+      <img src="./css/media/woman-g9cc5e633c_1280.jpg" class="w-100 imgfull">
     </div>
 <div class="carousel-item">
-      <img src="./css/media/summerfield-g4243d5336_1280.jpg" class="w-100">
+      <img src="./css/media/summerfield-g4243d5336_1280.jpg" class="w-100 imgfull">
     </div>
   </div>
 </div>
+</div>
 
+<div class="headingcarousel position-absolute">
 <h1 class="paddingtop30 text-white text-center d-block d-md-none">
 <strong class="strongly">Hi! <br/> Welcome to Fashion Season</strong>
 </h1>
