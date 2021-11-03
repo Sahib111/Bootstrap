@@ -77,6 +77,12 @@ font-family: 'Noto Sans', sans-serif;
 font-size:55px;
 }
 
+.budgetsale {
+z-index:-1;
+position:static;
+display:block;
+}
+
 </style>
 </head>
 <body>
@@ -100,17 +106,6 @@ font-size:55px;
 </div>
 </div>
 
-<div class="container-fluid position-absolute d-block" style="z-index:-1;">
-<div class="row">
-<div class="col-9 text-dark text-start fw-bolder">
-Budget Season Sale
-</div>
-<div class="col-3 text-end h5">
-<a href="#">See all</a></div>
-</div>
-</div>
-</div>
-
 <div class="headingcarousel">
 <h1 class="paddingtop30 text-white d-block d-md-none">
 <strong class="strongly">Hi! <br/> Welcome to Fashion Season</strong>
@@ -124,6 +119,17 @@ Budget Season Sale
 <div id="cursor">
 </div>
 <script src="./js/Typed.js"></script>
+</div>
+
+<div class="container-fluid d-block budgetsale">
+<div class="row">
+<div class="col-9 text-dark text-start fw-bolder">
+Budget Season Sale
+</div>
+<div class="col-3 text-end h5">
+<a href="#">See all</a></div>
+</div>
+</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
