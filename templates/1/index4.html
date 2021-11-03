@@ -11,7 +11,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"/>
 <style>
 
-
 .startpage{
 margin:0;
 max-width:100%;
@@ -78,9 +77,13 @@ font-size:55px;
 }
 
 .budgetsale {
-z-index:-1;
-position:static;
 display:block;
+}
+
+.indexplus {
+z-index:3;
+width:100vw;
+height:100vh;
 }
 
 </style>
@@ -88,6 +91,19 @@ display:block;
 <body>
 
 <div class="startpage">
+
+<div class="indexplus"></div>
+<div class="container-fluid d-block budgetsale">
+<div class="row">
+<div class="col-9 text-dark text-start fw-bolder">
+Budget Season Sale
+</div>
+<div class="col-3 text-end h5">
+<a href="#">See all</a></div>
+</div>
+</div>
+</div>
+
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -119,17 +135,6 @@ display:block;
 <div id="cursor">
 </div>
 <script src="./js/Typed.js"></script>
-</div>
-
-<div class="container-fluid d-block budgetsale">
-<div class="row">
-<div class="col-9 text-dark text-start fw-bolder">
-Budget Season Sale
-</div>
-<div class="col-3 text-end h5">
-<a href="#">See all</a></div>
-</div>
-</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
