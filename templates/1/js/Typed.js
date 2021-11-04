@@ -1,5 +1,5 @@
 // List of sentences
-var _CONTENT = [ "Twinkle, twinkle, little star", "How I wonder what you are", "Up above the world so high", "Like a diamond in the sky" ];
+var _CONTENT = [ "The Fashion you'll love and adore", "Take your comfort to the next level", "Up above the world so high", "Be stylish and famous else die!!!" ];
 
 // Current sentence being processed
 var _PART = 0;
