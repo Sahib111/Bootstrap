@@ -76,8 +76,16 @@ font-family: 'Noto Sans', sans-serif;
 font-size:55px;
 }
 
-.br20 {
-border-radius:20px;
+.br25 {
+border-radius:25px;
+}
+
+.onhover {
+display:none;
+}
+
+.onhover::hover {
+display:block;
 }
 
 </style>
@@ -137,7 +145,7 @@ Budget Season Sale
 <div class="container-fluid">
 <div class="row">
 <div class="col-12">
-<div id="carouselExampleSlidesOnly" class="carousel slide br20" data-bs-ride="carousel"> 
+<div id="carouselExampleSlidesOnly" class="carousel slide card br25" data-bs-ride="carousel"> 
 <div class="carousel-inner">
 
 <div class="carousel-item active">
@@ -154,7 +162,7 @@ Budget Season Sale
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
   </ul>
-  <div class="card">
+  <div class="card onhover">
     <a href="#" class="card-link btn">Card link</a>
     <a href="#" class="card-link btn">Another link</a>
  </div>
@@ -178,7 +186,7 @@ Budget Season Sale
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
   </ul>
-  <div class="card">
+  <div class="card onhover">
     <a href="#" class="card-link btn">Card link</a>
     <a href="#" class="card-link btn">Another link</a>
  </div>
@@ -203,7 +211,7 @@ Budget Season Sale
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
   </ul>
-  <div class="card">
+  <div class="card onhover">
     <a href="#" class="card-link btn">Card link</a>
     <a href="#" class="card-link btn">Another link</a>
  </div>
