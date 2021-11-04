@@ -38,7 +38,7 @@
     content: '';
     width: 0;
     border-radius: 100%;
-    background: #67bb6a; }
+    background: #000000; }
   
 .material-scrolltop:active::before {
     width: 120%;
@@ -47,16 +47,22 @@
     -ms-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out; }
-  .material-scrolltop.reveal {
+    transition: all 0.2s ease-out; 
+}
+  
+.material-scrolltop.reveal {
     width: 56px;
-    height: 56px; }
-  .material-scrolltop span {
+    height: 56px; 
+}
+  
+.material-scrolltop span {
     display: block;
     font-size: 25px;
-    color: #fff; }
+    color: #fff; 
+}
 
 .material-scrolltop, .material-scrolltop::before {
   background-image: url(./top-arrow.svg);
   background-position: center 50%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat; 
+}
