@@ -54,14 +54,14 @@ div.menu-pane {
   position: absolute;
   transform: translateX(-105vw);
   transform-origin: (0, 0);
-  width: 70%;
+  width: 100vw;
   height: auto;
   transition: 0.6s ease-in-out;
 }
 
 .menu-pane {
 z-index:11111;
-position:absolute;
+position:sticky;
 }
 
 .menu-pane p {
